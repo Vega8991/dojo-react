@@ -6,7 +6,11 @@ import Tarjeta from './components/Tarjeta'
 import BotonAlerta from './components/BotonAlerta'
 import InputConsola from './components/InputConsola'
 import { ListaFruta } from './components/Fruta'
+import Contador from './components/Contador'
+import FormularioNombre from './components/FormularioNombre'
+import { ListaTareas } from './components/Tarea'
 const frutas = ["Manzana", "Platano", "Naranja"];
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Saludo nombre="Manolo"/>
@@ -15,5 +19,8 @@ createRoot(document.getElementById('root')).render(
     <BotonAlerta />
     <InputConsola />
     <ListaFruta frutas={frutas} />
+    <Contador />
+    <FormularioNombre />
+    <ListaTareas />
   </StrictMode>,
 )
