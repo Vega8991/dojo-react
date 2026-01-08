@@ -5,7 +5,8 @@ import Perfil from './components/Perfil'
 import Tarjeta from './components/Tarjeta'
 import BotonAlerta from './components/BotonAlerta'
 import InputConsola from './components/InputConsola'
-
+import { ListaFruta } from './components/Fruta'
+const frutas = ["Manzana", "Platano", "Naranja"];
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Saludo nombre="Manolo"/>
@@ -13,5 +14,6 @@ createRoot(document.getElementById('root')).render(
     <Tarjeta titulo="tarjeta 1" contenido="Este contenido es de la tarea 1 act 3"/>
     <BotonAlerta />
     <InputConsola />
+    <ListaFruta frutas={frutas} />
   </StrictMode>,
 )
